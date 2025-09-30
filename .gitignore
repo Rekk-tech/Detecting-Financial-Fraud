@@ -1,0 +1,17 @@
+# Ignore all files inside data/
+data/*
+
+# But keep subfolders structure (empty folders)
+!data/
+!data/raw/
+!data/interim/
+!data/processed/
+
+# Allow placeholder files (để giữ folder rỗng trên git)
+!data/**/.gitkeep
+
+# Ignore common data formats
+*.csv
+*.parquet
+*.xlsx
+*.zip
